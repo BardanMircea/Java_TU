@@ -20,4 +20,16 @@ public class StringUtils {
         return vowels;
     }
 
+    public static String uniqueVowels(String candidate) {
+        if(candidate == null) return "";
+        String vowels = "";
+        char[] letters = candidate.toCharArray();
+        for (int i = 0; i < candidate.length(); i++) {
+            if (ALL_VOWELS.indexOf(letters[i]) >= 0 && vowels.indexOf(letters[i]) == -1) {
+                vowels += letters[i];
+            }
+        }
+        return vowels;
+    }
+
 }
