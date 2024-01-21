@@ -60,7 +60,6 @@ public class StringUtilsTest {
         String doubledVowels = "eeeeeeeeeeeeeeeeeee";
         String result = StringUtils.uniqueVowels(doubledVowels);
         System.out.println(result);
-git stat
         assertEquals("e", result);
     }
 }
